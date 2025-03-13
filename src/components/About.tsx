@@ -5,26 +5,15 @@ const About = () => {
         About
       </div>
       <div className="flex flex-col gap-5 text-base text-muted-foreground">
-        <p className="">
-          From my educational background, I designed, manufactured, and analyzed
-          mechanical systems. During my journey, I stumbled across the field of
-          robotics. At first, I thought it was cool to build the physical
-          hardware (I still do), but what really peaked my interest was the
-          software behind the autonomous behaviors.
-        </p>
-        <p className="">
-          This interest has led me to develop autonomy software for robots that
-          have traversed through land, air, and sea. Most of my contributions
-          and expertise is in GNC (Guidance, Navigation, and Control). Lately,
-          my focus has been more upstream where I get to be more involved with
-          perception and mapping, and I hope to stay in this realm.
-        </p>
-        {/* <p className="">
-          I&apos;ve been blessed to work with amazing people who I learned a lot
-          from throughout my career. I want to share this knowledge in form of
-          videos during my free time. Feel free to watch (hopefully) educational
-          and entertaining videos here.
-        </p> */}
+      <p className="">
+        Sumit Sharma is a distinguished educator, life coach, and mentor with over 24 years of experience in academia and professional development. He holds a B.Tech in Mechanical Engineering from Punjab Technical University and has been actively involved in teaching and training students since then. As an author, he has written on multiple topics, including books, <b>Kaushalendra: A Series of Children Books</b> and <b>Yogam: The Science of One's Relationship with the Supreme</b>.
+      </p>
+      <p className="">
+        Throughout his career, he has mentored students and professionals from institutions such as IIT and BITS, as well as corporate leaders from global companies like Google and Microsoft. As a Guest Faculty at BITS Pilani and Kurukshetra University for over two decades, he has played a significant role in designing and delivering courses on leadership, ethics, and personal development based on teachings of Bhagavad Gita. He has also been invited to speak at esteemed universities, including National University of Singapore (NUS), Nanyang Technological University (NTU), and BML Munjal University.
+      </p>
+      <p className="">
+       His ability to connect traditional wisdom with modern challenges has made him a respected voice in education, leadership, and self-development. Committed to making learning accessible and impactful, he continues to inspire individuals on their journey toward self-awareness, purpose, and personal growth.
+      </p>
       </div>
     </section>
   );

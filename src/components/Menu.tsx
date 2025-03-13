@@ -67,7 +67,7 @@ const useSectionVisibility = (sectionIds: string[]): string => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [sectionIds]);
 
   return visibility;
 };

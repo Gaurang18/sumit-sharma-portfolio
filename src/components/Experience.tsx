@@ -139,7 +139,7 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
         Experience
       </div>
       {experience}
-      <a
+      {/* <a
         href="resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -149,7 +149,7 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
         <span>
           <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
         </span>
-      </a>
+      </a> */}
     </section>
   );
 };

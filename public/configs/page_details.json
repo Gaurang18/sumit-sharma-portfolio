@@ -1,83 +1,133 @@
 {
   "header": {
-    "image": "images/profile.jpg",
-    "introduction": "Howdy, Samir here",
-    "position": "Software Engineer",
-    "summary": "I like to build autonomous systems"
+    "image": "images/profile.jpeg",
+    "introduction": "Sumit Sharma",
+    "position": "Author, Educator and Life Coach",
+    "summary": "Guides students and professionals in inner and personal development."
   },
 
   "menu": [
-    {"isActive": false, "section": "about"},
-    {"isActive": false, "section": "experience"},
-    {"isActive": false, "section": "projects"}
+    {"isActive": true, "section": "about"},
+    {"isActive": true, "section": "books"}
   ],
-  "education": [  {
-    "subject": "Mechanical Engineering",
-    "degree": "MS",
-    "university": "Texas A&M University"
-  },
-  {
-    "subject": "Mechanical Engineering",
-    "degree": "BS",
-    "university": "Texas A&M University"
-}],
-  "experience":  [ { 
-    "position": "Robotics Engineer",
-    "prevPositions": [""],
-    "company": "Greensea IQ",
-    "startDate": "Oct 2021",
-    "endDate": "Feb 2024",
-    "description": "I expanded Greensea's autonomy stack for a fleet of underwater robotics. This entailed localization, mapping, and obstacle avoidance for both holonomic and nonholonomic vehicles. Some projects I contributed towards are the following: EverClean (ship hull cleaning service), OPENSEA (hardware agnostic software for underwater robotics), Bayonet AUGV (sea floor surveying), and EOD (Explosive Ordnance Neutralization).",
-    "skills": ["C++", "Python", "LCM", "OpenCV", "PCL", "Git", "Docker", "Data Analysis"],
-    "mainLink": "https://greenseaiq.com/",
-    "sideLinks": [{"label":"EOD Demo", "link":"https://www.youtube.com/watch?v=XmifeADVPSM&ab_channel=GreenseaIQ"}]
-  }, { 
-    "position": "Research Engineer",
-    "company": "Bush Combat Development Complex",
-    "startDate": "May 2020",
-    "endDate": "Sep 2021",
-    "description": "The main problem we were solving was related to multi-agent systems where we needed decisive coordination between multiple ground and air vehicles. I concentrated on sensor processing, mapping, and navigation for off-road ground automobiles.",
-    "skills": ["C++", "Python", "ROS", "OpenCV", "PCL", "Git", "Docker"],
-    "mainLink": "https://bcdc.tamus.edu/core-competencies/coordinated-air-ground-vehicle-maneuvering/"
-  },
-  { 
-    "position": "Graduate Researcher",
-    "company": "Connected Autonomous Safe Technologies",
-    "startDate": "Aug 2018",
-    "endDate": "May 2020",
-    "description": "I designed and implemented a data-driven nonlinear longitudinal and lateral controller for ground vehicles.",
-    "skills": ["Python", "ROS"],
-    "mainLink": "https://cast.tamu.edu/"
-    
-  },  { 
-    "position": "Controls Team Lead",
-    "company": "SAE AutoDrive Challenge",
-    "startDate": "Aug 2017",
-    "endDate": "May 2018",
-    "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
-    "skills": ["C++", "Python", "MATLAB", "ROS"],
-    "mainLink": "https://www.autodrivechallenge.com/",
-    "sideLinks": [{"label":"2nd Place Article", "link":"https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"}]
+  
+  "education": [
+    {
+      "subject": "Mechanical Engineering",
+      "degree": "Bachelors in Technology",
+      "university": "Punjab Technical University"
+    },
+    {
+      "subject": "Bhakti Sastri",
+      "degree": "High Honors",
+      "university": "ISKCON Board of Examinations"
+    },
+    {
+      "subject": "Teacher Training (Beginner & Advanced)",
+      "degree": "Completed",
+      "university": "Vaishnava Training and Education, ISKCON"
+    },
+    {
+      "subject": "Shastric Training",
+      "degree": "Traditional Education (2001-2012)",
+      "university": "Brahma-Madhva-Gaudiya Lineage, ISKCON"
+    }
+  ],
+  
+  "experience": [
+    { 
+      "position": "Director",
+      "company": "Bhaktivedanta Institute for Education and Training",
+      "startDate": "2025",
+      "endDate": "Present",
+      "description": "Overseeing spiritual education, training, and cultural programs internationally. Conducting classes on Vedic studies, organizing examinations, and awarding Shastric degrees to qualified candidates.",
+      "skills": ["Educational Leadership", "Vedic Studies", "Program Management"],
+      "mainLink": ""
+    },
+    { 
+      "position": "Guest Faculty",
+      "company": "BITS Pilani",
+      "startDate": "2003",
+      "endDate": "2021",
+      "description": "Taught Bhagavad Gita as part of a certificate course, emphasizing its practical application in personal and professional life. Engaged 100+ students every semester in discussions on philosophy, ethics, and leadership.",
+      "skills": ["Teaching", "Philosophy"],
+      "mainLink": "https://www.bits-pilani.ac.in/"
+    },
+    { 
+      "position": "Guest Faculty",
+      "company": "Kurukshetra University",
+      "startDate": "2021",
+      "endDate": "Present",
+      "description": "Teaching Bhagavad Gita as part of Humanity Elective in collaboration with Kurukshetra University.",
+      "skills": ["Teaching", "Philosophy", "Vedic Studies"],
+      "mainLink": "https://kuk.ac.in/"
+    },
+    { 
+      "position": "Spiritual Educator & Life Coach",
+      "company": "",
+      "startDate": "2003",
+      "endDate": "Present",
+      "description": "Providing mentorship to students and professionals from institutions across globe both in person and online. Also conducting Bhagavad Gita seminar and training sessions in collaboration with universities and industries.",
+      "skills": ["Spiritual Coaching", "Leadership Training", "Seminars & Training Sessions"],
+      "mainLink": ""
+    }
+  ],
 
-  }],
-  "projects":  [ { 
-    "name": "GPT - The Office",
-    "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
-    "description": "A Generative Pretrained Model (GPT) using a similar decoder architecture from \"Attention is All You Need\" utilizes scripts from \"The Office\" to create scripts similar to the show. There are two tokenization method: \bcharacter-wise tokens and GPT-2 tokens. While this was tested and trained on a singular GPU, I hope to move this project forward with multi-GPU processing.",
-    "skills": ["Python", "Pytorch", "Numpy", "LLM"],
-    "mainLink": "https://github.com/shassen14/gpt_the_office"
-  }, { 
-    "name": "Rust Robotics",
-    "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
-    "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
-    "skills": ["Rust"],
-    "mainLink": "https://github.com/shassen14/rust_robotics",
-    "sideLinks": []
-  }, { 
-    "name": "samirhassen.com",
-    "image":"images/website_screenshot.png",
-    "description": "I'm not a frontend developer by any means, but I created this portfolio website using Brittany Chiang's website as inspiration. I learned and executed ideas in an unfamiliar domain.",
-    "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "mainLink": "https://github.com/shassen14/portfolio_website"
-  }]
+  "talks": [
+    {
+      "institutions": [
+        { "name": "National University of Singapore, Singapore", "year": "2025" },
+        { "name": "Nanyang Technological University, Singapore", "year": "2025" },
+        { "name": "BML Munjal University", "year": "2022*" },
+        { "name": "Kurukshetra University", "year": "2021*" },
+        { "name": "Punjab Engineering College", "year": "2017" },
+        { "name": "IIT Kanpur", "year": "2004" },
+        { "name": "IIT BHU", "year": "2004" },
+        { "name": "BITS Pilani", "year": "2003*" },
+        { "name": "Hindustan College, Mathura", "year": "2003" }
+      ]
+    }
+  ],
+
+  "books": [
+    {
+      "title": "Kaushalendra: The Divine Prince (Bala Kanda)",
+      "description": "Part I of the series of books for children to learn about Lord Rama and His life and teachings.",
+      "publishedYear": "2024",
+      "publisher": "",
+      "mainLink": "",
+      "src": "/images/k1.png"
+    },
+    {
+      "title": "Kaushalendra: The Prince of Ayodhya (Ayodhya Kanda)",
+      "description": "Part II of the series of books for children to learn about Lord Rama and His life and teachings.",
+      "publishedYear": "2024",
+      "publisher": "",
+      "mainLink": "",
+      "src": "/images/k2.png"
+    },
+    {
+      "title": "Yogam: The Science of One's Relationship with the Supreme",
+      "description": "A thematic presentation of the Bhagavad Gita, exploring its teachings and their relevance to modern life.",
+      "publishedYear": "2025",
+      "publisher": "",
+      "mainLink": "",
+      "src": "/images/yogam.png"
+    }
+  ],
+  
+  "references": [
+    {
+      "name": "Prof. L.K. Maheshwari",
+      "position": "Former Director and Vice Chancellor, BITS Pilani"
+    },
+    {
+      "name": "Prof. K.E. Raman",
+      "position": "Former Director, BITS Pilani KK Birla Goa Campus"
+    },
+    {
+      "name": "Prof. R. K. Mittal",
+      "position": "Former Director, BITS Pilani Dubai Campus & Former Vice Chancellor, K R Mangalam University"
+    }
+  ]
 }

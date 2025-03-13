@@ -1,13 +1,13 @@
 // import { Github, Linkedin, Youtube } from "lucide-react";
-import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
+// import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
+// import { Button } from "@/components/ui/button";
 import ThemeSwitcher from "@/components/utils/ThemeSwitcher";
 
 // TODO: magic links and social media, use json or some config file to obtain reference link
 const Contacts = () => {
   return (
     <div className="flex flex-row items-center justify-left gap-6 mt-10">
-      <Button variant="outline">
+      {/* <Button variant="outline">
         <a
           href="https://www.linkedin.com/in/shhassen/"
           target="_blank"
@@ -33,7 +33,7 @@ const Contacts = () => {
         >
           <FiYoutube className="h-6 w-fit" />
         </a>
-      </Button>
+      </Button> */}
       <ThemeSwitcher></ThemeSwitcher>
     </div>
   );
