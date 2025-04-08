@@ -40,12 +40,9 @@ const Talks: FC<TalksProps> = ({ talkDetails }) => {
       </div>
       <ul className="list-disc list-inside">
         {talkDetails.map((item, index) => (
-            <TalkItem key={index} {...item} />
+          <TalkItem key={index} {...item} />
         ))}
       </ul>
-      <footer className="text-xs text-muted-foreground mt-4">
-        * indicates regular ongoing regular talks
-      </footer>
     </section>
   );
 };

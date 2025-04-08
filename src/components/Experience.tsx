@@ -11,15 +11,6 @@ import { FC } from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 import { FaLink } from "react-icons/fa";
 
-// TODO There is space on the bottom of this section that adds onto the gap to the section below.
-// This sucks because there is inconsistency spacing between sections.
-// there is problem with doing the function and mapping with not allowing gaps, so margins were
-// used to have spacing between card but now there is problem with spacing between sections
-
-// TODO for card, can i get negative inset working? to make the card hover bigger easily
-// TODO: need to figure hover for smaller devices to make mainlink light up when card hover
-// currently only work if hovering over the position for those devices
-
 type LabelAndLink = {
   label: string;
   link: string;
@@ -31,7 +22,7 @@ type ExperienceDetail = {
   company: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string | string[];
   skills: string[];
   mainLink?: string;
   sideLinks?: LabelAndLink[];
@@ -70,7 +61,6 @@ function ExperienceItem(props: ExperienceDetail) {
   }
 
   return (
-    // TODO need to work on the hover border/shadow
     <Card
       className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent bg-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
         hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
@@ -98,7 +88,15 @@ function ExperienceItem(props: ExperienceDetail) {
           </p>
         ))}
         <CardDescription className="py-2 text-muted-foreground">
-          {props.description}
+          {Array.isArray(props.description) ? (
+            <ul className="list-disc pl-5">
+              {props.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{props.description}</p>
+          )}
         </CardDescription>
 
         {sideLinkElement}
@@ -132,24 +130,9 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
       ></ExperienceItem>
     );
   });
-
   return (
-    <section id="experience" className="flex flex-col gap-3 mb-16 lg:mb-24">
-      <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
-        Experience
-      </div>
+    <section id="experience" className="flex flex-col gap-3">
       {experience}
-      {/* <a
-        href="resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
-      >
-        <span>View Full Resume</span>
-        <span>
-          <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
-        </span>
-      </a> */}
     </section>
   );
 };
