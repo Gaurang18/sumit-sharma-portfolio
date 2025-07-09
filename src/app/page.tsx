@@ -61,7 +61,7 @@ export default function Home() {
                   href="#about" 
                   className="btn-primary group"
                 >
-                  <span>Discover My Journey</span>
+                  <span>Discover His Journey</span>
                   <FaArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
                 </a>
                 <a 
@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <FaBook className="h-4 w-4 text-primary" />
-                    <span className="text-2xl font-bold text-foreground">6</span>
+                    <span className="text-2xl font-bold text-foreground">3</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Published Books</p>
                 </div>

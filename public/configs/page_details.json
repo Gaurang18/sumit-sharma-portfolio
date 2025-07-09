@@ -124,31 +124,45 @@
   
   "references": [
     {
-      "name": "Rahul Kumar",
-      "position": "Software Engineer",
-      "company": "Google",
-      "testimonial": "Sir's Bhagavad Gita classes at BITS Pilani completely transformed my perspective on life and work. His teachings on karma yoga helped me find balance in my tech career.",
+      "name": "AP Singh",
+      "position": "Dean",
+      "company": "BITS Pilani",
+      "testimonial": "Sumit Sharma Sir has been associated with BITS Pilani for over two decades, and his work around the Bhagavad Gita has had a quiet but meaningful impact on the student community. Through his sessions, lectures, and discussions, he has helped students engage deeply with timeless values and practical ethics. His presence has added depth to our campus environment, encouraging reflection and clarity in the minds of young learners.",
       "image": "/images/profiles.jpeg"
     },
     {
-      "name": "Priya Sharma",
-      "position": "Research Scientist",
-      "company": "NUS Singapore",
-      "testimonial": "Meeting Sir at NUS was life-changing. His wisdom on handling academic pressure and finding purpose in research has guided me through my PhD journey.",
+      "name": "LK Maheshwari",
+      "position": "Former Vice-Chancellor",
+      "company": "BITS Pilani",
+      "testimonial": "It has been a privilege to witness the profound and consistent influence Sumit Sharma has had on our students and academic community. His ability to convey the Gita's teachings with clarity, sincerity, and spiritual force is exceptional. Over the years, he has become a quiet pillar of character formation in our ecosystem.",
       "image": "/images/profiles.jpeg"
     },
     {
-      "name": "Arjun Patel",
-      "position": "Data Scientist",
-      "company": "Microsoft",
-      "testimonial": "Sir's mentorship helped me understand that success isn't just about technical skills. His teachings on dharma and leadership shaped my approach to problem-solving.",
+      "name": "Siddarth Bhatia",
+      "position": "Director",
+      "company": "Puch AI",
+      "testimonial": "Sumit Sir's way of teaching transcends the classroom. He doesn't just explain ideas — he awakens thought. His calm demeanor, depth of knowledge, and ability to simplify even the most abstract concepts have deeply influenced how I think and lead.",
       "image": "/images/profiles.jpeg"
     },
     {
-      "name": "Ananya Reddy",
-      "position": "Product Manager",
-      "company": "Samsung",
-      "testimonial": "The practical wisdom from Sir's classes continues to guide my decisions. His emphasis on ethical leadership and self-awareness has been invaluable in my career.",
+      "name": "Gaurang Bansal",
+      "position": "Founder",
+      "company": "Quickads",
+      "testimonial": "It's rare to meet someone who combines intellectual sharpness with genuine humility the way Sumit Sir does. He shaped not just how I look at texts like the Gita, but how I approach challenges in business and life. His mentorship has been foundational.",
+      "image": "/images/profiles.jpeg"
+    },
+    {
+      "name": "Gaurang Deoghare",
+      "position": "IES, Deputy Manager",
+      "company": "NHAI",
+      "testimonial": "Learning from Sumit Sir was a transformative experience. He doesn't just interpret the Gita — he lives it. His classes taught me not just philosophy, but how to apply it with clarity and purpose in real-world decisions.",
+      "image": "/images/profiles.jpeg"
+    },
+    {
+      "name": "Saharsh Agarwal",
+      "position": "Assistant Professor",
+      "company": "ISB",
+      "testimonial": "What makes Sumit Sir special is not just his knowledge, but the way he connects it to each student's journey. His insights continue to guide me — in academia, in leadership, and in life. He teaches you how to think, not what to think.",
       "image": "/images/profiles.jpeg"
     }
   ],
