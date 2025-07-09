@@ -1,61 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Updated light mode color palette */
+/* Spiritual & Elegant Design System inspired by Radhanath Swami */
 @layer base {
   :root {
-    /* Light background with warm, off-white tone */
-    --background: 60 100% 97%; /* #FEFDEA in HSL */
-    --foreground: 0 0% 0%; /* Black */
-
-    /* Consistent background for cards and popovers */
-    --card: 60 100% 98%;
-    --card-foreground: 210 20% 20%;
-    --popover: 60 100% 98%;
-    --popover-foreground: 210 20% 20%;
-
-    /* Primary actions – a vivid cool blue for buttons/links */
-    --primary: 220 90% 56%;
-    --primary-foreground: 0 0% 100%;
-
-    /* Secondary actions – a complementary rich tone */
-    --secondary: 340 65% 47%;
-    --secondary-foreground: 0 0% 100%;
-
-    /* Muted elements – soft blue-gray background for low emphasis sections */
-    --muted: 210 16% 93%;
-    --muted-foreground: 210 20% 20%;
-
-    /* Accent – a vibrant green for spot accents */
-    --accent: 90 70% 48%;
-    --accent-foreground: 0 0% 100%;
-
-    /* Destructive action – a bright red for warnings/errors */
-    --destructive: 0 84% 67%;
-    --destructive-foreground: 0 0% 100%;
-
-    /* Borders and inputs – subtle contrast on elements */
-    --border: 210 16% 90%;
-    --input: 210 16% 90%;
-
-    /* Focus ring */
-    --ring: 220 90% 56%;
-
-    /* Border radius */
+    /* Deep, Rich Primary Colors */
+    --background: 20 14% 4%; /* Deep charcoal */
+    --foreground: 60 9% 98%; /* Warm off-white */
+    --card: 20 14% 6%; /* Slightly lighter charcoal */
+    --card-foreground: 60 9% 98%;
+    
+    /* Warm, Spiritual Brand Colors */
+    --primary: 35 85% 55%; /* Warm golden orange */
+    --primary-foreground: 20 14% 4%;
+    --secondary: 45 70% 85%; /* Soft warm beige */
+    --secondary-foreground: 20 14% 4%;
+    
+    /* Spiritual Accent Colors */
+    --accent: 40 60% 90%; /* Gentle warm yellow */
+    --accent-foreground: 20 14% 4%;
+    --muted: 20 14% 12%; /* Dark muted */
+    --muted-foreground: 60 9% 70%;
+    
+    /* Status Colors */
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 60 9% 98%;
+    --success: 120 60% 45%; /* Natural green */
+    --success-foreground: 60 9% 98%;
+    --warning: 35 85% 55%; /* Warm orange */
+    --warning-foreground: 20 14% 4%;
+    
+    /* UI Elements */
+    --border: 20 14% 15%; /* Dark border */
+    --input: 20 14% 15%;
+    --ring: 35 85% 55%;
     --radius: 0.5rem;
+    
+    /* Rich Shadows */
+    --shadow-sm: 0 2px 4px 0 rgb(0 0 0 / 0.3);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -1px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 10px 10px -5px rgb(0 0 0 / 0.3);
+    --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+  }
 
-    /* Hover effects for cards */
-    --cardhover-background: 210 16% 95%;
-    --cardhover-border: 210 16% 90%;
-    --cardhover-shadow: 0 0% 0% / 0.1;
-
-    /* Link colors */
-    --link: 220 90% 56%;
-    --link-light: 220 90% 66%;
-
-    /* Mouse spotlight (if needed) */
-    --spotlight: 60 100% 98%;
+  .light {
+    --background: 60 9% 98%; /* Warm off-white */
+    --foreground: 20 14% 4%; /* Deep charcoal */
+    --card: 0 0% 100%; /* Pure white */
+    --card-foreground: 20 14% 4%;
+    --primary: 35 85% 55%; /* Warm golden orange */
+    --primary-foreground: 60 9% 98%;
+    --secondary: 45 70% 85%; /* Soft warm beige */
+    --secondary-foreground: 20 14% 4%;
+    --accent: 40 60% 90%; /* Gentle warm yellow */
+    --accent-foreground: 20 14% 4%;
+    --muted: 60 9% 90%; /* Light muted */
+    --muted-foreground: 20 14% 40%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 60 9% 98%;
+    --border: 60 9% 85%; /* Light border */
+    --input: 60 9% 85%;
+    --ring: 35 85% 55%;
   }
 }
 
@@ -63,22 +72,312 @@
   * {
     @apply border-border;
   }
+  
   html {
     @apply scroll-smooth;
+    font-size: 16px;
+    line-height: 1.6;
   }
+  
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-variation-settings: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, hsl(20, 14%, 4%) 0%, hsl(20, 14%, 8%) 100%);
+  }
+  
+  .light body {
+    background: linear-gradient(135deg, hsl(60, 9%, 98%) 0%, hsl(60, 9%, 95%) 100%);
+  }
+  
+  /* Elegant Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-semibold tracking-tight;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    font-weight: 700;
+    background: linear-gradient(135deg, hsl(35, 85%, 55%) 0%, hsl(25, 60%, 45%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    font-weight: 600;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+    font-weight: 600;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+    font-weight: 600;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl;
+    font-weight: 600;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg lg:text-xl;
+    font-weight: 600;
+  }
+  
+  p {
+    @apply text-base leading-relaxed;
+  }
+  
+  /* Focus States */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  
+  /* Selection */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
   }
 }
 
 @layer components {
-  .mouse-spotlight {
-    @apply fixed inset-0 pointer-events-none;
-    background-image: radial-gradient(
-      700px at var(--mouse-x) var(--mouse-y),
-      hsl(var(--spotlight) / 40%) 0%,
-      hsl(var(--spotlight) / 20%) 25%,
-      hsl(var(--spotlight) / 0%) 50%
-    );
+  /* Layout Components */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-20 md:py-28;
+  }
+  
+  .section-sm {
+    @apply py-12 md:py-16;
+  }
+  
+  /* Elegant Card Components */
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border shadow-sm;
+    background: linear-gradient(135deg, hsl(20, 14%, 6%) 0%, hsl(20, 14%, 8%) 100%);
+  }
+  
+  .card-hover {
+    @apply card transition-all duration-500 hover:shadow-lg hover:scale-[1.02];
+    background: linear-gradient(135deg, hsl(20, 14%, 6%) 0%, hsl(20, 14%, 8%) 100%);
+  }
+  
+  .light .card {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(60, 9%, 98%) 100%);
+  }
+  
+  .light .card-hover {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(60, 9%, 98%) 100%);
+  }
+  
+  /* Elegant Button Components */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 h-12 px-8 py-3 shadow-lg;
+    background: linear-gradient(135deg, hsl(35, 85%, 55%) 0%, hsl(25, 60%, 45%) 100%);
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary text-secondary-foreground hover:bg-secondary/80 h-12 px-8 py-3;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 px-8 py-3;
+  }
+  
+  .btn-ghost {
+    @apply btn hover:bg-accent hover:text-accent-foreground h-12 px-8 py-3;
+  }
+  
+  /* Navigation */
+  .nav-link {
+    @apply text-sm font-medium transition-all duration-300 hover:text-primary relative;
+  }
+  
+  .nav-link-active {
+    @apply text-primary;
+  }
+  
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  
+  /* Elegant Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(35, 85%, 55%) 0%, hsl(25, 60%, 45%) 100%);
+    @apply bg-clip-text text-transparent;
+  }
+  
+  /* Elegant Glass Effect */
+  .glass {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50;
+  }
+  
+  /* Decorative Elements */
+  .divider {
+    @apply w-24 h-1 bg-gradient-to-r from-primary to-primary/60 rounded-full mx-auto;
+  }
+  
+  .quote-mark {
+    @apply text-6xl text-primary/20 font-serif;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Spiritual Elements */
+  .spiritual-card {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(20, 14%, 6%) 0%, hsl(20, 14%, 8%) 100%);
+  }
+  
+  .spiritual-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-5;
+    background: radial-gradient(circle at 20% 80%, hsl(35, 85%, 55%) 0%, transparent 50%);
+  }
+  
+  .light .spiritual-card {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(60, 9%, 98%) 100%);
+  }
+  
+  .light .spiritual-card::before {
+    background: radial-gradient(circle at 20% 80%, hsl(35, 85%, 55%) 0%, transparent 50%);
+  }
+}
+
+/* Elegant & Spiritual Animations */
+@keyframes elegantFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes elegantSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes elegantScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes elegantFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes spiritualGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.2);
+  }
+}
+
+/* Animation Classes */
+.animate-elegant-fade-in {
+  animation: elegantFadeIn 0.8s ease-out forwards;
+}
+
+.animate-elegant-slide-in {
+  animation: elegantSlideIn 0.8s ease-out forwards;
+}
+
+.animate-elegant-scale-in {
+  animation: elegantScaleIn 0.6s ease-out forwards;
+}
+
+.animate-elegant-float {
+  animation: elegantFloat 4s ease-in-out infinite;
+}
+
+.animate-spiritual-glow {
+  animation: spiritualGlow 3s ease-in-out infinite;
+}
+
+/* Stagger animations for lists */
+.animate-stagger > * {
+  opacity: 0;
+  animation: elegantFadeIn 0.8s ease-out forwards;
+}
+
+.animate-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.animate-stagger > *:nth-child(2) { animation-delay: 0.2s; }
+.animate-stagger > *:nth-child(3) { animation-delay: 0.3s; }
+.animate-stagger > *:nth-child(4) { animation-delay: 0.4s; }
+.animate-stagger > *:nth-child(5) { animation-delay: 0.5s; }
+.animate-stagger > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .section {
+    @apply py-16;
+  }
+  
+  .section-sm {
+    @apply py-8;
   }
 }

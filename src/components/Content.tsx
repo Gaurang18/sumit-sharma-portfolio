@@ -28,59 +28,144 @@ const Content: FC = () => {
   const sections: Section[] = PageDetailsFile.menu;
 
   return (
-    <div className="flex flex-col">
+    <div className="space-y-32">
       {sections.map((section, index) => {
         if (!section.isActive) return null;
         const title = section.section.charAt(0).toUpperCase() + section.section.slice(1);
+        
         switch (section.section) {
           case Sections.About:
             return (
-              <div key={index} id="about" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <About />
-              </div>
+              <section key={index} id="about" className="section">
+                <div className="container">
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">{title}</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Discover the journey that shaped Sir's philosophy and approach to life coaching
+                      </p>
+                    </div>
+                    <div className="spiritual-card p-8 md:p-12 animate-elegant-fade-in">
+                      <About />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.Experience:
             return (
-              <div key={index} id="experience" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <Experience experienceDetails={PageDetailsFile.experience} />
-              </div>
+              <section key={index} id="experience" className="section">
+                <div className="container">
+                  <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">{title}</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Sir's professional journey in education, mentoring, and spiritual guidance
+                      </p>
+                    </div>
+                    <div className="space-y-8 animate-stagger">
+                      <Experience experienceDetails={PageDetailsFile.experience} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.Education:
             return (
-              <div key={index} id="education" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <Education educationDetails={PageDetailsFile.education} />
-              </div>
+              <section key={index} id="education" className="section">
+                <div className="container">
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">{title}</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Academic foundation and continuous learning in Sir's field
+                      </p>
+                    </div>
+                    <div className="animate-elegant-fade-in">
+                      <Education educationDetails={PageDetailsFile.education} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.Talks:
             return (
-              <div key={index} id="talks" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <Talks talkDetails={PageDetailsFile.talks} />
-              </div>
+              <section key={index} id="talks" className="section">
+                <div className="container">
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">Talks & Lectures</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Sharing wisdom and insights at prestigious institutions worldwide
+                      </p>
+                    </div>
+                    <div className="spiritual-card p-8 md:p-12 animate-elegant-fade-in">
+                      <Talks talkDetails={PageDetailsFile.talks} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.Books:
             return (
-              <div key={index} id="books" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <Books bookDetails={PageDetailsFile.books} />
-              </div>
+              <section key={index} id="books" className="section">
+                <div className="container">
+                  <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">{title}</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Published works that share timeless wisdom and spiritual insights
+                      </p>
+                    </div>
+                    <div className="space-y-8 animate-stagger">
+                      <Books bookDetails={PageDetailsFile.books} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.References:
             return (
-              <div key={index} id="references" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <References referenceDetails={PageDetailsFile.references} />
-              </div>
+              <section key={index} id="references" className="section">
+                <div className="container">
+                  <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">Student Testimonials</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Heartfelt testimonials from students whose lives have been transformed through Sir's guidance
+                      </p>
+                    </div>
+                    <div className="animate-elegant-fade-in">
+                      <References referenceDetails={PageDetailsFile.references} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           case Sections.Gallery:
             return (
-              <div key={index} id="gallery" className="mb-8 lg:mb-12">
-                <h2 className="text-2xl font-bold mb-2">Gallery</h2>
-                <ImageCarousel images={PageDetailsFile.gallery} />
-              </div>
+              <section key={index} id="gallery" className="section">
+                <div className="container">
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-16">
+                      <h2 className="text-balance mb-6">Gallery</h2>
+                      <div className="divider"></div>
+                      <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+                        Moments from Sir's journey as an educator, speaker, and life coach
+                      </p>
+                    </div>
+                    <div className="spiritual-card p-8 md:p-12 animate-elegant-fade-in">
+                      <ImageCarousel images={PageDetailsFile.gallery} />
+                    </div>
+                  </div>
+                </div>
+              </section>
             );
           default:
             return null;

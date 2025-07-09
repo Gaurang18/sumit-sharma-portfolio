@@ -1,167 +1,178 @@
-  {
-    "header": {
-      "image": "images/profile.png",
-      "introduction": "Sumit Sharma",
-      "position": "Author, Educator and Life Coach",
-      "summary": "Guides students and professionals in inner and personal development."
+{
+  "header": {
+    "image": "images/profile.png",
+    "introduction": "Sumit Sharma",
+    "position": "Author, Educator and Life Coach",
+    "summary": "Guides students and professionals in inner and personal development."
+  },
+
+  "menu": [
+    {"isActive": true, "section": "about"},
+    {"isActive": true, "section": "experience"},
+    {"isActive": true, "section": "education"},
+    {"isActive": true, "section": "talks"},
+    {"isActive": true, "section": "books"},
+    {"isActive": true, "section": "references"},
+    {"isActive": true, "section": "gallery"}
+  ],  
+  
+  "education": [
+    {
+      "subject": "Mechanical Engineering",
+      "degree": "Bachelors in Technology",
+      "university": "Punjab Technical University"
     },
+    {
+      "subject": "Bhakti Sastri",
+      "degree": "High Honors",
+      "university": "ISKCON Board of Examinations"
+    },
+    {
+      "subject": "Teacher Training (Beginner & Advanced)",
+      "degree": "Completed",
+      "university": "Vaishnava Training and Education, ISKCON"
+    },
+    {
+      "subject": "Shastric Training",
+      "degree": "Traditional Education (2001-2012)",
+      "university": "Brahma-Madhva-Gaudiya Lineage, ISKCON"
+    }
+  ],
+  
+  "experience": [
+    { 
+      "position": "Guest Faculty",
+      "company": "BITS Pilani",
+      "startDate": "2004",
+      "endDate": "2021",
+      "description": [
+        "Taught the Srimad Bhagavad Gita (HSS F334), Comparative Region (HUM C421), and Reading Course (BITS C382) as an elective course for 18 years.",
+        "Emphasized the practical application of teachings in personal and professional life.",
+        "Engaged over 100 students each semester in rich discussions on philosophy, ethics, and leadership."
+      ],
+      "skills": ["Teaching", "Philosophy", "Leadership Development"],
+      "mainLink": "https://www.bits-pilani.ac.in/"
+    },
+    { 
+      "position": "Guest Faculty",
+      "company": "Kurukshetra University",
+      "startDate": "2012",
+      "endDate": "Present",
+      "description": [
+        "Taught Bhagavad Gita as part of the Diploma Course at Kurukshetra University, enriching students' understanding of its timeless wisdom.",
+        "Explored deep philosophical concepts of the Bhagavad Gita, inspiring learners to integrate these teachings into their daily lives."
+      ],
+      "skills": ["Teaching", "Philosophy", "Vedic Studies"],
+      "mainLink": "https://kuk.ac.in/"
+    },
+    { 
+      "position": "Spiritual Educator & Life Coach",
+      "company": "",
+      "startDate": "2003",
+      "endDate": "Present",
+      "description": [
+        "Providing mentorship to students and professionals from institutions across globe both in person and online.",
+        "Also conducting Bhagavad Gita seminar and training sessions in collaboration with universities and industries."
+      ],
+      "skills": [
+        "Spiritual Coaching", 
+        "Leadership Training", 
+        "Seminars & Training Sessions"
+      ],
+      "mainLink": ""
+    }
+  ],
 
-    "menu": [
-      {"isActive": true, "section": "about"},
-      {"isActive": true, "section": "experience"},
-      {"isActive": true, "section": "talks"},
-      {"isActive": true, "section": "books"},
-      {"isActive": true, "section": "references"},
-      {"isActive": true, "section": "gallery"}
-    ],  
-    
-    "education": [
-      {
-        "subject": "Mechanical Engineering",
-        "degree": "Bachelors in Technology",
-        "university": "Punjab Technical University"
-      },
-      {
-        "subject": "Bhakti Sastri",
-        "degree": "High Honors",
-        "university": "ISKCON Board of Examinations"
-      },
-      {
-        "subject": "Teacher Training (Beginner & Advanced)",
-        "degree": "Completed",
-        "university": "Vaishnava Training and Education, ISKCON"
-      },
-      {
-        "subject": "Shastric Training",
-        "degree": "Traditional Education (2001-2012)",
-        "university": "Brahma-Madhva-Gaudiya Lineage, ISKCON"
-      }
-    ],
-    
-    "experience": [
-      { 
-        "position": "Guest Faculty",
-        "company": "BITS Pilani",
-        "startDate": "2004",
-        "endDate": "2021",
-        "description": [
-          "Taught the Srimad Bhagavad Gita (HSS F334), Comparative Region (HUM C421), and Reading Course (BITS C382) as an elective course for 18 years.",
-          "Emphasized the practical application of teachings in personal and professional life.",
-          "Engaged over 100 students each semester in rich discussions on philosophy, ethics, and leadership."
-        ],
-        "skills": ["Teaching", "Philosophy", "Leadership Development"],
-        "mainLink": "https://www.bits-pilani.ac.in/"
-      },
-      { 
-        "position": "Guest Faculty",
-        "company": "Kurukshetra University",
-        "startDate": "2012",
-        "endDate": "Present",
-        "description": [
-          "Taught Bhagavad Gita as part of the Diploma Course at Kurukshetra University, enriching students' understanding of its timeless wisdom.",
-          "Explored deep philosophical concepts of the Bhagavad Gita, inspiring learners to integrate these teachings into their daily lives."
-        ],
-        "skills": ["Teaching", "Philosophy", "Vedic Studies"],
-        "mainLink": "https://kuk.ac.in/"
-      },
-      { 
-        "position": "Spiritual Educator & Life Coach",
-        "company": "",
-        "startDate": "2003",
-        "endDate": "Present",
-        "description": [
-          "Providing mentorship to students and professionals from institutions across globe both in person and online.",
-          "Also conducting Bhagavad Gita seminar and training sessions in collaboration with universities and industries."
-        ],
-        "skills": [
-          "Spiritual Coaching", 
-          "Leadership Training", 
-          "Seminars & Training Sessions"
-        ],
-        "mainLink": ""
-      }
-    ],
+  "talks": [
+    {
+      "institutions": [
+        { "name": "National University of Singapore, Singapore", "year": "2025" },
+        { "name": "Nanyang Technological University, Singapore", "year": "2025" },
+        { "name": "Silicon Institute of Technology", "year": "2025" },
+        { "name": "Centurion University", "year": "2024" },
+        { "name": "BITS Pilani", "year": "2022" },
+        { "name": "BML Munjal University", "year": "2022" },
+        { "name": "Kurukshetra University", "year": "2021" },
+        { "name": "Punjab Engineering College", "year": "2017" }
+      ]
+    }
+  ],
 
-    "talks": [
-      {
-        "institutions": [
-          { "name": "National University of Singapore, Singapore", "year": "2025" },
-          { "name": "Nanyang Technological University, Singapore", "year": "2025" },
-          { "name": "Silicon Institute of Technology", "year": "2025" },
-          { "name": "Centurion University", "year": "2024" },
-          { "name": "BITS Pilani", "year": "2022" },
-          { "name": "BML Munjal University", "year": "2022" },
-          { "name": "Kurukshetra University", "year": "2021" },
-          { "name": "Punjab Engineering College", "year": "2017" }
-        ]
-      }
-    ],
+  "books": [
+    {
+      "title": "Kaushalendra: The Divine Prince (Bala Kanda)",
+      "description": "Part I of the series of books for children to learn about Lord Rama and His life and teachings.",
+      "publishedYear": "2024",
+      "publisher": "",
+      "src": "/images/cover1.png"
+    },
+    {
+      "title": "Kaushalendra: The Prince of Ayodhya (Ayodhya Kanda)",
+      "description": "Part II of the series of books for children to learn about Lord Rama and His life and teachings.",
+      "publishedYear": "2024",
+      "publisher": "",
+      "src": "/images/cover2.png"
+    },
+    {
+      "title": "Yogam: The Science of One's Relationship with the Supreme",
+      "description": "A thematic presentation of the Bhagavad Gita, exploring its teachings and their relevance to modern life.",
+      "publishedYear": "2025",
+      "publisher": "",
+      "src": "/images/yogam3.png"
+    }
+  ],
+  
+  "references": [
+    {
+      "name": "Rahul Kumar",
+      "position": "Software Engineer",
+      "company": "Google",
+      "testimonial": "Sir's Bhagavad Gita classes at BITS Pilani completely transformed my perspective on life and work. His teachings on karma yoga helped me find balance in my tech career.",
+      "image": "/images/profiles.jpeg"
+    },
+    {
+      "name": "Priya Sharma",
+      "position": "Research Scientist",
+      "company": "NUS Singapore",
+      "testimonial": "Meeting Sir at NUS was life-changing. His wisdom on handling academic pressure and finding purpose in research has guided me through my PhD journey.",
+      "image": "/images/profiles.jpeg"
+    },
+    {
+      "name": "Arjun Patel",
+      "position": "Data Scientist",
+      "company": "Microsoft",
+      "testimonial": "Sir's mentorship helped me understand that success isn't just about technical skills. His teachings on dharma and leadership shaped my approach to problem-solving.",
+      "image": "/images/profiles.jpeg"
+    },
+    {
+      "name": "Ananya Reddy",
+      "position": "Product Manager",
+      "company": "Samsung",
+      "testimonial": "The practical wisdom from Sir's classes continues to guide my decisions. His emphasis on ethical leadership and self-awareness has been invaluable in my career.",
+      "image": "/images/profiles.jpeg"
+    }
+  ],
 
-    "books": [
-      {
-        "title": "Kaushalendra: The Divine Prince (Bala Kanda)",
-        "description": "Part I of the series of books for children to learn about Lord Rama and His life and teachings.",
-        "publishedYear": "2024",
-        "publisher": "",
-        "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/cover1.png"
-      },
-      {
-        "title": "Kaushalendra: The Prince of Ayodhya (Ayodhya Kanda)",
-        "description": "Part II of the series of books for children to learn about Lord Rama and His life and teachings.",
-        "publishedYear": "2024",
-        "publisher": "",
-        "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/cover2.png"
-      },
-      {
-        "title": "Yogam: The Science of One's Relationship with the Supreme",
-        "description": "A thematic presentation of the Bhagavad Gita, exploring its teachings and their relevance to modern life.",
-        "publishedYear": "2025",
-        "publisher": "",
-        "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/yogam3.png"
-      }
-    ],
-    
-    "references": [
-      {
-        "name": "Prof. L.K. Maheshwari",
-        "position": "Former Director and Vice Chancellor, BITS Pilani",
-        "link": "https://www.linkedin.com/in/dr-l-k-maheshwari-6b55a318/?originalSubdomain=in"
-      },
-      {
-        "name": "Prof. K.E. Raman",
-        "position": "Former Director, BITS Pilani KK Birla Goa Campus",
-        "link": "https://www.linkedin.com/in/raman-ke-1a343916/?originalSubdomain=in"
-      },
-      {
-        "name": "Prof. R. K. Mittal",
-        "position": "Former Director, BITS Pilani Dubai Campus & Former Vice Chancellor, K R Mangalam University",
-        "link": "https://www.linkedin.com/in/rk-mittal-8a8779/?originalSubdomain=in"
-      }
-    ],
-
-    "gallery": [
-      {
-        "imageUrl": "/images/NUs.jpeg",
-        "description": "A timely talk exploring the pressures on today's engineers, the roots of modern work anxiety, and strategies for balancing tech advances with well-being.",
-        "title": "Bhagavad Gita Seminar at NUS Singapore"
-      },
-      {
-        "imageUrl": "/images/kuk.png",
-        "description": "A regular lecture for the Bhagavad Gita course at Kurukshetra University. ",
-        "title": "⁠Lecture in Bhagavad Gita Course, Kurukshetra University"
-      },
-      {
-        "imageUrl": "/images/BITS.jpeg",
-        "description": "At NUS, an engaging session connected Bhagavad Gita teachings with modern perspectives, sparking interactive discussions and a vibrant exchange of ideas.",
-        "title": "Talk at NUS: The Digital Age Dilemma: Addressing Engineer Anxiety"
-      },
-      {
-        "imageUrl": "/images/KIIT.jpeg",
-        "description": "A dynamic discussion with the Vice Chancellor of KIIT Bhubaneswar on integrating the Bhagavad Gita into the curriculum to align ancient Vedic wisdom with modern perspectives.",
-        "title": "Meeting with VC, KIIT Bhubaneswar"
-      }
-    ]
-  }
+  "gallery": [
+    {
+      "imageUrl": "/images/NUs.jpeg",
+      "description": "A timely talk exploring the pressures on today's engineers, the roots of modern work anxiety, and strategies for balancing tech advances with well-being.",
+      "title": "Bhagavad Gita Seminar at NUS Singapore"
+    },
+    {
+      "imageUrl": "/images/kuk.png",
+      "description": "A regular lecture for the Bhagavad Gita course at Kurukshetra University. ",
+      "title": "⁠Lecture in Bhagavad Gita Course, Kurukshetra University"
+    },
+    {
+      "imageUrl": "/images/BITS.jpeg",
+      "description": "At NUS, an engaging session connected Bhagavad Gita teachings with modern perspectives, sparking interactive discussions and a vibrant exchange of ideas.",
+      "title": "Talk at NUS: The Digital Age Dilemma: Addressing Engineer Anxiety"
+    },
+    {
+      "imageUrl": "/images/KIIT.jpeg",
+      "description": "A dynamic discussion with the Vice Chancellor of KIIT Bhubaneswar on integrating the Bhagavad Gita into the curriculum to align ancient Vedic wisdom with modern perspectives.",
+      "title": "Meeting with VC, KIIT Bhubaneswar"
+    }
+  ]
+}

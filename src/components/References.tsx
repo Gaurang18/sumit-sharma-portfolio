@@ -1,52 +1,90 @@
 import { FC } from "react";
-import { LuArrowUpRight } from "react-icons/lu";
-import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+import { FaQuoteLeft, FaStar, FaHeart, FaUserGraduate } from "react-icons/fa";
+import { HiAcademicCap, HiOfficeBuilding } from "react-icons/hi";
 
 type ReferenceDetail = {
   name: string;
   position: string;
-  link: string;
+  company: string;
+  testimonial: string;
+  image: string;
 };
 
 type ReferencesProps = {
-  referenceDetails?: ReferenceDetail[];
+  referenceDetails: ReferenceDetail[];
 };
 
-function ReferenceItem({ name, position, link, index }: ReferenceDetail & { index: number }) {
+function ReferenceItem({ name, position, company, testimonial, image }: ReferenceDetail) {
   return (
-    <Card className="flex flex-col w-full min-h-fit gap-0 mb-4 border-transparent bg-transparent px-2 lg:py-2 lg:gap-2 hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg">
-      <CardContent className="flex flex-col p-0">
-        <div className="flex flex-col">
-          <div className="flex items-start gap-2">
-            <span className="text-sm">{index + 1}.</span>
-            <div>
-              <h3 className="font-bold">{name}</h3>
-              <p className="text-sm text-muted-foreground">{position}</p>
-              {link && (
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group/mainlink text-link text-sm hover:text-link-light mt-1 inline-flex items-center"
-                >
-                  View Profile <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
-                </a>
-              )}
+    <div className="group relative p-8 rounded-lg border bg-card hover:shadow-lg transition-all duration-500 animate-elegant-fade-in">
+      {/* Decorative corner element */}
+      <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full"></div>
+      
+      <div className="space-y-6">
+        {/* Quote */}
+        <div className="relative">
+          <div className="absolute -top-2 -left-2 p-2 bg-primary/10 rounded-full">
+            <FaQuoteLeft className="h-4 w-4 text-primary" />
+          </div>
+          <p className="text-lg text-muted-foreground italic pl-8 leading-relaxed">
+            {testimonial}
+          </p>
+          {/* Decorative line */}
+          <div className="w-16 h-px bg-gradient-to-r from-primary/40 to-transparent mt-4 ml-8"></div>
+        </div>
+        
+        {/* Author */}
+        <div className="flex items-center gap-4">
+          <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
+            <Image
+              src={image}
+              alt={name}
+              fill
+              sizes="64px"
+              className="object-cover"
+            />
+            {/* Overlay effect */}
+            <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div className="flex-1">
+            <h4 className="text-lg font-semibold text-foreground flex items-center gap-2">
+              <FaUserGraduate className="h-4 w-4 text-primary" />
+              {name}
+            </h4>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+              <HiOfficeBuilding className="h-3 w-3" />
+              <span>{position} • {company}</span>
             </div>
           </div>
         </div>
-      </CardContent>
-    </Card>
+        
+        {/* Rating/Trust indicators */}
+        <div className="flex items-center gap-4 pt-4 border-t border-primary/10">
+          <div className="flex items-center gap-1">
+            <FaStar className="h-3 w-3 text-primary" />
+            <FaStar className="h-3 w-3 text-primary" />
+            <FaStar className="h-3 w-3 text-primary" />
+            <FaStar className="h-3 w-3 text-primary" />
+            <FaStar className="h-3 w-3 text-primary" />
+          </div>
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <FaHeart className="h-3 w-3 text-primary" />
+            <span>Grateful Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
-const References: FC<ReferencesProps> = ({ referenceDetails = [] }) => {
+const References: FC<ReferencesProps> = ({ referenceDetails }) => {
   return (
-    <section id="references" className="flex flex-col gap-3">
+    <div className="grid gap-8 md:grid-cols-2">
       {referenceDetails.map((item, index) => (
-        <ReferenceItem key={index} {...item} index={index} />
+        <ReferenceItem key={index} {...item} />
       ))}
-    </section>
+    </div>
   );
 };
 

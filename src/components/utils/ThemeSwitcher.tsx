@@ -1,32 +1,26 @@
-// following https://staticmania.com/blog/guide-to-creating-a-darklight-mode-toggle-in-next-js
-// but for typescript and my own twist with shadcn
-"use client";
-import { FiMoon, FiSun } from "react-icons/fi";
-import { useTheme } from "next-themes";
-import { Switch } from "@/components/ui/switch";
-import { useState } from "react";
+"use client"
 
-const ChooseTheme = (isSwitchOn: boolean) => {
-  const { setTheme } = useTheme();
+import * as React from "react"
+import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 
-  if (isSwitchOn) {
-    setTheme("light");
-    return <FiSun className="h-6 w-fit" />;
-  } else {
-    setTheme("dark");
-    return <FiMoon className="h-6 w-fit" />;
-  }
-};
+import { Button } from "@/components/ui/button"
 
-const ThemeSwitcher = () => {
-  const [isChecked, setChecked] = useState(false);
+export function ThemeSwitcher() {
+  const { theme, setTheme } = useTheme()
 
   return (
-    <div className="flex flex-row gap-3 transition-all">
-      <Switch checked={isChecked} onCheckedChange={setChecked}></Switch>
-      {ChooseTheme(isChecked)}
-    </div>
-  );
-};
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      className="h-10 w-10 rounded-full border border-border/50 bg-background/80 backdrop-blur-sm hover:bg-background/90 transition-all duration-300"
+    >
+      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
+  )
+}
 
-export default ThemeSwitcher;
+export default ThemeSwitcher

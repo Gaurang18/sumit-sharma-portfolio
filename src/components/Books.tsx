@@ -1,13 +1,13 @@
 import { FC } from "react";
-import { Card } from "@/components/ui/card";
-import { LuArrowUpRight } from "react-icons/lu";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { FaBook, FaCalendarAlt, FaStar, FaExternalLinkAlt } from "react-icons/fa";
+import { HiBookOpen, HiSparkles } from "react-icons/hi";
 
 type BookDetail = {
   title: string;
   description: string;
   publishedYear: string;
-  mainLink: string;
   src: string;
 };
 
@@ -15,53 +15,87 @@ type BooksProps = {
   bookDetails: BookDetail[];
 };
 
-function BookItem({ title, description, publishedYear, mainLink, src }: BookDetail) {
+function BookItem({ title, description, publishedYear, src }: BookDetail) {
   return (
-    <Card className="relative flex flex-col w-full min-h-fit border-transparent bg-transparent gap-2 mb-0 px-2 py-1 hover:bg-cardhover-background hover:shadow-md">
-      <div className="flex flex-row gap-4">
-        <div className="relative h-[180px] w-[120px] rounded-md overflow-hidden -mt-[26px]">
+    <div className="group relative p-8 rounded-lg border bg-card hover:shadow-lg transition-all duration-500 animate-elegant-fade-in">
+      {/* Decorative corner element */}
+      <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full"></div>
+      
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Book Cover with enhanced styling */}
+        <div className="relative h-56 w-40 rounded-lg overflow-hidden shadow-lg flex-shrink-0 group-hover:shadow-xl transition-all duration-500">
           <Image
             src={src}
             alt={title}
             fill
-            sizes="120px"
-            className="object-contain"
+            sizes="160px"
+            className="object-cover"
             priority
           />
+          {/* Overlay effect */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          {/* Book icon overlay */}
+          <div className="absolute top-2 right-2 p-1 bg-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <FaBook className="h-3 w-3 text-primary" />
+          </div>
         </div>
-        <div className="flex flex-col gap-1">
-          <h3 className="text-base font-bold">{title}</h3>
-          <p className="text-sm">{description}</p>
-          <div className="flex flex-row items-center gap-2">
-            <span className="text-sm font-bold">{publishedYear}</span>
-            <a
-              href={mainLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-link hover:text-link/80 flex items-center gap-1"
+        
+        {/* Content */}
+        <div className="flex flex-col gap-6 flex-1">
+          {/* Header */}
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <HiBookOpen className="h-5 w-5 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-foreground leading-tight">
+                {title}
+              </h3>
+            </div>
+            
+            <p className="text-muted-foreground leading-relaxed">
+              {description}
+            </p>
+          </div>
+          
+          {/* Publication Year */}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+              <FaCalendarAlt className="h-4 w-4" />
+              <span>Published</span>
+            </div>
+            <Badge 
+              variant="secondary"
+              className="text-sm font-medium bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors"
             >
-              View PDF
-              <LuArrowUpRight className="h-3 w-3" />
-            </a>
+              {publishedYear}
+            </Badge>
+          </div>
+          
+          {/* Decorative elements */}
+          <div className="flex items-center gap-4 pt-4 border-t border-primary/10">
+            <div className="flex items-center gap-1 text-xs text-muted-foreground">
+              <FaStar className="h-3 w-3 text-primary" />
+              <span>Featured Work</span>
+            </div>
+            <div className="flex items-center gap-1 text-xs text-muted-foreground">
+              <HiSparkles className="h-3 w-3 text-primary" />
+              <span>Spiritual Wisdom</span>
+            </div>
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
 
 const Books: FC<BooksProps> = ({ bookDetails }) => {
   return (
-    <section id="books" className="flex flex-col gap-2 mb-12 lg:mb-20">
-      <div className="lg:hidden font-bold uppercase text-sm pb-2">
-        Books
-      </div>
-      <div className="flex flex-col gap-4">
-        {bookDetails.map((item, index) => (
-          <BookItem key={index} {...item} />
-        ))}
-      </div>
-    </section>
+    <div className="space-y-8">
+      {bookDetails.map((item, index) => (
+        <BookItem key={index} {...item} />
+      ))}
+    </div>
   );
 };
 
