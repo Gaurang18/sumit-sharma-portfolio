@@ -54,7 +54,7 @@ function TalkItem({ institutions }: TalkDetail) {
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <FaMapMarkerAlt className="h-3 w-3" />
-                    <span>International Institution</span>
+                    <span>{(institution.name === 'National University of Singapore' || institution.name === 'Nanyang Technological University') ? 'Singapore' : 'India'}</span>
                   </div>
                 </div>
               </div>

@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <FaBook className="h-4 w-4 text-primary" />
-                    <span className="text-2xl font-bold text-foreground">3</span>
+                    <span className="text-2xl font-bold text-foreground">6</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Published Books</p>
                 </div>

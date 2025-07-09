@@ -86,8 +86,8 @@
   "talks": [
     {
       "institutions": [
-        { "name": "National University of Singapore, Singapore", "year": "2025" },
-        { "name": "Nanyang Technological University, Singapore", "year": "2025" },
+        { "name": "National University of Singapore", "year": "2025" },
+        { "name": "Nanyang Technological University", "year": "2025" },
         { "name": "Silicon Institute of Technology", "year": "2025" },
         { "name": "Centurion University", "year": "2024" },
         { "name": "BITS Pilani", "year": "2022" },
