@@ -2,69 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* light mode color theme: https://colorhunt.co/palette/fff8e8f7eed3aab396674636 
-   dark mode color theme: https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097 */
-
+/* Updated light mode color palette */
 @layer base {
   :root {
-    --background: 42 100% 95%; /* FFF8E8 */
-    --foreground: 20 31% 20%; /* #432e23 */
-    --card: 30 0% 98%; /* fafafa */
-    --card-foreground: 20 31% 20%; /* #432e23 */
-    --popover: 30 0% 98%; /* fafafa */
-    --popover-foreground: 20 31% 20%; /* #432e23 */
-    --primary: 20 31% 20%; /* #432e23 button filled color */
-    --primary-foreground: 30 0% 98%; /* fafafa */
-    --secondary: 30 0% 96%; /* fafafa */
-    --secondary-foreground: 20 31% 20%; /* #432e23 */
-    --muted: 30 0% 96%; /* fafafa */
-    --muted-foreground: 33 29% 35%; /* ?? */
-    --accent: 30 0% 96%; /* fafafa */
-    --accent-foreground: 20 31% 20%; /* #432e23 */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 30 0% 96%; /* fafafa */
-    --border: 30 32% 89.8%; /* ?? */
-    --input: 30 32% 89.8%; /* ?? */
-    --ring: 40 50% 50%; /* ??? */
+    /* Light background with warm, off-white tone */
+    --background: 60 100% 97%; /* #FEFDEA in HSL */
+    --foreground: 0 0% 0%; /* Black */
+
+    /* Consistent background for cards and popovers */
+    --card: 60 100% 98%;
+    --card-foreground: 210 20% 20%;
+    --popover: 60 100% 98%;
+    --popover-foreground: 210 20% 20%;
+
+    /* Primary actions – a vivid cool blue for buttons/links */
+    --primary: 220 90% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary actions – a complementary rich tone */
+    --secondary: 340 65% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted elements – soft blue-gray background for low emphasis sections */
+    --muted: 210 16% 93%;
+    --muted-foreground: 210 20% 20%;
+
+    /* Accent – a vibrant green for spot accents */
+    --accent: 90 70% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive action – a bright red for warnings/errors */
+    --destructive: 0 84% 67%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs – subtle contrast on elements */
+    --border: 210 16% 90%;
+    --input: 210 16% 90%;
+
+    /* Focus ring */
+    --ring: 220 90% 56%;
+
+    /* Border radius */
     --radius: 0.5rem;
 
-    --cardhover-background: 45 75% 95%; /* F7EED3 */
-    --cardhover-border: 30 0% 98%; /* fafafa */
-    --cardhover-shadow: 240 3.7% 15.9%;
+    /* Hover effects for cards */
+    --cardhover-background: 210 16% 95%;
+    --cardhover-border: 210 16% 90%;
+    --cardhover-shadow: 0 0% 0% / 0.1;
 
-    --link: 78 40% 35%; /* #687d36 */
+    /* Link colors */
+    --link: 220 90% 56%;
+    --link-light: 220 90% 66%;
 
-    --spotlight: 40 65% 80%;
-  }
-  .dark {
-    --background: 0 11% 16%; /* 2D2424 */
-    --foreground: 30 0% 98%; /* fafafa */
-    --card: 0 11% 16%; /* 2D2424 */
-    --card-foreground: 30 0% 98%; /* fafafa */
-    --popover: 0 11% 16%; /* 2D2424 */
-    --popover-foreground: 30 0% 98%; /* fafafa */
-    --primary: 16.9 53.3% 47.1%; /* b85c38 */
-    --primary-foreground: 0 9.8% 18%; /* 322929 */
-    --secondary: 33.1 18.5% 69.2%; /* bfb2a2 */
-    --secondary-foreground: 30 0% 98%; /* fafafa */
-    --muted: 33.1 18.5% 69.2%; /* bfb2a2 */
-    --muted-foreground: 33.3 52.9% 86.7%; /* efdfcb */
-    --accent: 33.1 18.5% 69.2%; /* bfb2a2 */
-    --accent-foreground: 30 0% 98%; /* fafafa */
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 30 0% 98%; /* fafafa */
-    --border: 33.1 18.5% 69.2%; /* bfb2a2 */
-    --input: 33.1 18.5% 69.2%; /* bfb2a2 */
-    --ring: 0 0% 83.1%;
-
-    /* TODO choose different colors */
-    --cardhover-background: 0 10.6% 25.9%;
-    --cardhover-border: 0 11% 16%; /* 2D2424 */
-    --cardhover-shadow: 25 20% 65% / 0.1;
-
-    --link: 47.9 95.8% 53.1%;
-
-    --spotlight: 0 6% 28%;
+    /* Mouse spotlight (if needed) */
+    --spotlight: 60 100% 98%;
   }
 }
 

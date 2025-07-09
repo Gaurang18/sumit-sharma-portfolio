@@ -19,14 +19,14 @@ function TalkItem({ institutions }: TalkDetail) {
   return (
     <Card className="relative flex flex-col w-full min-h-fit border-transparent bg-transparent gap-2 mb-0 px-2 py-1 hover:bg-cardhover-background hover:shadow-md">
       <CardContent className="p-0 flex flex-col gap-1">
-        <ul className="list-disc list-inside text-sm font-medium text-muted-foreground">
+        <div className="text-sm font-medium">
           {institutions.map((institution, index) => (
-            <li key={index} className="flex justify-between items-center">
-              • {institution.name}
+            <div key={index} className="flex justify-between items-center">
+              <span>• {institution.name}</span>
               <Badge className="text-link bg-link/10 text-sm">{institution.year}</Badge>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </CardContent>
     </Card>
   );
@@ -35,14 +35,14 @@ function TalkItem({ institutions }: TalkDetail) {
 const Talks: FC<TalksProps> = ({ talkDetails }) => {
   return (
     <section id="talks" className="flex flex-col gap-2 mb-12 lg:mb-20">
-      <div className="lg:hidden font-bold uppercase text-sm text-foreground pb-2">
+      <div className="lg:hidden font-bold uppercase text-sm pb-2">
         Talks & Lectures
       </div>
-      <ul className="list-disc list-inside">
+      <div className="flex flex-col gap-4">
         {talkDetails.map((item, index) => (
           <TalkItem key={index} {...item} />
         ))}
-      </ul>
+      </div>
     </section>
   );
 };

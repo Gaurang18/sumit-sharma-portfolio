@@ -1,7 +1,6 @@
 // import { Github, Linkedin, Youtube } from "lucide-react";
 // import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
 // import { Button } from "@/components/ui/button";
-import ThemeSwitcher from "@/components/utils/ThemeSwitcher";
 
 // TODO: magic links and social media, use json or some config file to obtain reference link
 const Contacts = () => {
@@ -34,7 +33,6 @@ const Contacts = () => {
           <FiYoutube className="h-6 w-fit" />
         </a>
       </Button> */}
-      <ThemeSwitcher></ThemeSwitcher>
     </div>
   );
 };

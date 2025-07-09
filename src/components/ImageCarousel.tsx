@@ -19,6 +19,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images = [] }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentRef = containerRef.current;
+    if (!currentRef) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -26,14 +29,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images = [] }) => {
       { threshold: 0.1 }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+    observer.observe(currentRef);
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
-      }
+      observer.unobserve(currentRef);
     };
   }, []);
 
@@ -42,7 +41,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images = [] }) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 4500); // Changed to 3000 milliseconds (3 seconds)
 
     return () => clearInterval(interval);
   }, [images.length, isVisible]);

@@ -35,49 +35,49 @@ const Content: FC = () => {
         switch (section.section) {
           case Sections.About:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="about" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <About />
               </div>
             );
           case Sections.Experience:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="experience" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <Experience experienceDetails={PageDetailsFile.experience} />
               </div>
             );
           case Sections.Education:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="education" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <Education educationDetails={PageDetailsFile.education} />
               </div>
             );
           case Sections.Talks:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="talks" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <Talks talkDetails={PageDetailsFile.talks} />
               </div>
             );
           case Sections.Books:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="books" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <Books bookDetails={PageDetailsFile.books} />
               </div>
             );
           case Sections.References:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="references" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
                 <References referenceDetails={PageDetailsFile.references} />
               </div>
             );
           case Sections.Gallery:
             return (
-              <div key={index} className="mb-8 lg:mb-12">
+              <div key={index} id="gallery" className="mb-8 lg:mb-12">
                 <h2 className="text-2xl font-bold mb-2">Gallery</h2>
                 <ImageCarousel images={PageDetailsFile.gallery} />
               </div>

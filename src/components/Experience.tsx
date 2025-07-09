@@ -95,7 +95,7 @@ function ExperienceItem(props: ExperienceDetail) {
               ))}
             </ul>
           ) : (
-            <p>{props.description}</p>
+            <div>{props.description}</div>
           )}
         </CardDescription>
 

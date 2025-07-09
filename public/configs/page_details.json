@@ -1,6 +1,6 @@
   {
     "header": {
-      "image": "images/profiles.jpeg",
+      "image": "images/profile.png",
       "introduction": "Sumit Sharma",
       "position": "Author, Educator and Life Coach",
       "summary": "Guides students and professionals in inner and personal development."
@@ -40,22 +40,6 @@
     
     "experience": [
       { 
-        "position": "Director",
-        "company": "Bhagavata Institute",
-        "startDate": "2025",
-        "endDate": "Present",
-        "description": [
-          "Overseeing spiritual education, training, and cultural programs internationally.",
-          "Conducting classes on Vedic studies, organizing examinations, and awarding Shastric degrees to qualified candidates."
-        ],
-        "skills": [
-          "Educational Leadership", 
-          "Vedic Studies", 
-          "Program Management"
-        ],  
-        "mainLink": "https://bhagavatainstitute.com/"
-      },
-      { 
         "position": "Guest Faculty",
         "company": "BITS Pilani",
         "startDate": "2004",
@@ -74,7 +58,7 @@
         "startDate": "2012",
         "endDate": "Present",
         "description": [
-          "Taught Bhagavad Gita as part of the Humanity Elective at Kurukshetra University, enriching students' understanding of its timeless wisdom.",
+          "Taught Bhagavad Gita as part of the Diploma Course at Kurukshetra University, enriching students' understanding of its timeless wisdom.",
           "Explored deep philosophical concepts of the Bhagavad Gita, inspiring learners to integrate these teachings into their daily lives."
         ],
         "skills": ["Teaching", "Philosophy", "Vedic Studies"],
@@ -103,6 +87,8 @@
         "institutions": [
           { "name": "National University of Singapore, Singapore", "year": "2025" },
           { "name": "Nanyang Technological University, Singapore", "year": "2025" },
+          { "name": "Silicon Institute of Technology", "year": "2025" },
+          { "name": "Centurion University", "year": "2024" },
           { "name": "BITS Pilani", "year": "2022" },
           { "name": "BML Munjal University", "year": "2022" },
           { "name": "Kurukshetra University", "year": "2021" },
@@ -118,7 +104,7 @@
         "publishedYear": "2024",
         "publisher": "",
         "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/k1.png"
+        "src": "/images/cover1.png"
       },
       {
         "title": "Kaushalendra: The Prince of Ayodhya (Ayodhya Kanda)",
@@ -126,7 +112,7 @@
         "publishedYear": "2024",
         "publisher": "",
         "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/k2.png"
+        "src": "/images/cover2.png"
       },
       {
         "title": "Yogam: The Science of One's Relationship with the Supreme",
@@ -134,15 +120,7 @@
         "publishedYear": "2025",
         "publisher": "",
         "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/yogam.png"
-      },
-      {
-        "title": "Reflections: Thinking with the Vedas",
-        "description": "A collection of reflections from the passages on the Bhagavad Gita, exploring its teachings and their relevance to modern life.",
-        "publishedYear": "2025",
-        "publisher": "",
-        "mainLink": "https://drive.google.com/drive/folders/1Pjj8PZv20NARFiVz4un0rihDqVp0ABNR?usp=sharing",
-        "src": "/images/c23.png"
+        "src": "/images/yogam3.png"
       }
     ],
     
@@ -167,23 +145,23 @@
     "gallery": [
       {
         "imageUrl": "/images/NUs.jpeg",
-        "description": "Talk on Vedic education and personal development.",
-        "title": "Talk at NUS"
+        "description": "A timely talk exploring the pressures on today's engineers, the roots of modern work anxiety, and strategies for balancing tech advances with well-being.",
+        "title": "Bhagavad Gita Seminar at NUS Singapore"
       },
       {
-        "imageUrl": "/images/kuk.jpeg",
-        "description": "Regular lectures on Bhagavad Gita.",
-        "title": "Talk at Kurukshetra University"
+        "imageUrl": "/images/kuk.png",
+        "description": "A regular lecture for the Bhagavad Gita course at Kurukshetra University. ",
+        "title": "⁠Lecture in Bhagavad Gita Course, Kurukshetra University"
       },
       {
         "imageUrl": "/images/BITS.jpeg",
-        "description": "Bhagavad Gita Course Lecture.",
-        "title": "Talk at BITS Pilani"
+        "description": "At NUS, an engaging session connected Bhagavad Gita teachings with modern perspectives, sparking interactive discussions and a vibrant exchange of ideas.",
+        "title": "Talk at NUS: The Digital Age Dilemma: Addressing Engineer Anxiety"
       },
       {
         "imageUrl": "/images/KIIT.jpeg",
-        "description": "Meeting with Vice Chancellor, KIIT University",
-        "title": "Meeting with Vice Chancellor, KIIT University"
+        "description": "A dynamic discussion with the Vice Chancellor of KIIT Bhubaneswar on integrating the Bhagavad Gita into the curriculum to align ancient Vedic wisdom with modern perspectives.",
+        "title": "Meeting with VC, KIIT Bhubaneswar"
       }
     ]
   }

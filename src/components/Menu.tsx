@@ -24,15 +24,15 @@ function MenuItem(props: MenuDetail) {
       <div
         className={
           props.isActive
-            ? "w-16 h-[0.16rem] mr-4 transition-all group-hover:w-16 bg-foreground group-hover:bg-foreground"
-            : "w-8 h-0.5 mr-4 transition-all group-hover:w-16 bg-muted-foreground group-hover:bg-foreground"
+            ? "w-16 h-[0.16rem] mr-4 transition-all duration-300 group-hover:w-16 bg-foreground group-hover:bg-foreground"
+            : "w-8 h-0.5 mr-4 transition-all duration-300 group-hover:w-16 bg-muted-foreground group-hover:bg-foreground"
         }
       />
       <div
         className={
           props.isActive
-            ? "transition-all text-foreground font-extrabold group-hover:text-foreground"
-            : "transition-all text-muted-foreground group-hover:text-foreground"
+            ? "transition-all duration-300 text-foreground font-extrabold group-hover:text-foreground"
+            : "transition-all duration-300 text-muted-foreground group-hover:text-foreground"
         }
       >
         {props.section}
@@ -48,25 +48,23 @@ const useSectionVisibility = (sectionIds: string[]): string => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.map((entry) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibility(entry.target.id);
           }
         });
       },
-      { threshold: 0.5 } // Adjust this threshold as needed
+      { threshold: 0.5 }
     );
 
-    sectionIds.forEach((Id) => {
-      const ref = document.getElementById(Id);
-      if (ref) {
-        observer.observe(ref);
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
       }
     });
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [sectionIds]);
 
   return visibility;
@@ -82,9 +80,9 @@ const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   const menu = MenuDetails.map((item, index) => (
     <MenuItem
       key={index}
-      isActive={activeSection === item.section}
+      isActive={activeSection === item.section.toLowerCase()}
       section={item.section.toUpperCase()}
-    ></MenuItem>
+    />
   ));
 
   return (
