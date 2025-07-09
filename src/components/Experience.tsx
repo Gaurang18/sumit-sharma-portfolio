@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
-import { LuArrowUpRight, LuCalendar, LuMapPin, LuExternalLink } from "react-icons/lu";
-import { FaLink, FaGraduationCap, FaChalkboardTeacher, FaHeart } from "react-icons/fa";
+import { LuArrowUpRight, LuCalendar, LuExternalLink } from "react-icons/lu";
+import { FaGraduationCap, FaChalkboardTeacher, FaHeart } from "react-icons/fa";
 import { HiAcademicCap, HiOfficeBuilding } from "react-icons/hi";
 
 type LabelAndLink = {

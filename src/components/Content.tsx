@@ -43,7 +43,7 @@ const Content: FC = () => {
                       <h2 className="text-balance mb-6">{title}</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Discover the journey that shaped Sir's philosophy and approach to life coaching
+                        Discover the journey that shaped Sir&apos;s philosophy and approach to life coaching
                       </p>
                     </div>
                     <div className="spiritual-card p-8 md:p-12 animate-elegant-fade-in">
@@ -62,7 +62,7 @@ const Content: FC = () => {
                       <h2 className="text-balance mb-6">{title}</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Sir's professional journey in education, mentoring, and spiritual guidance
+                        Sir&apos;s professional journey in education, mentoring, and spiritual guidance
                       </p>
                     </div>
                     <div className="space-y-8 animate-stagger">
@@ -81,7 +81,7 @@ const Content: FC = () => {
                       <h2 className="text-balance mb-6">{title}</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Academic foundation and continuous learning in Sir's field
+                        Academic foundation and continuous learning in Sir&apos;s field
                       </p>
                     </div>
                     <div className="animate-elegant-fade-in">
@@ -138,7 +138,7 @@ const Content: FC = () => {
                       <h2 className="text-balance mb-6">Student Testimonials</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Heartfelt testimonials from students whose lives have been transformed through Sir's guidance
+                        Heartfelt testimonials from students whose lives have been transformed through Sir&apos;s guidance
                       </p>
                     </div>
                     <div className="animate-elegant-fade-in">
@@ -157,7 +157,7 @@ const Content: FC = () => {
                       <h2 className="text-balance mb-6">Gallery</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Moments from Sir's journey as an educator, speaker, and life coach
+                        Moments from Sir&apos;s journey as an educator, speaker, and life coach
                       </p>
                     </div>
                     <div className="spiritual-card p-8 md:p-12 animate-elegant-fade-in">

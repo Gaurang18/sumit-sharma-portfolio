@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { FaBook, FaCalendarAlt, FaStar, FaExternalLinkAlt } from "react-icons/fa";
+import { FaBook, FaCalendarAlt, FaStar } from "react-icons/fa";
 import { HiBookOpen, HiSparkles } from "react-icons/hi";
 
 type BookDetail = {

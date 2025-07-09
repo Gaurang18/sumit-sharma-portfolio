@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "@/components/utils/ThemeSwitcher";
 import PageDetailsFile from "@p/configs/page_details.json";
 import { Menu, X } from "lucide-react";
 
-const sections = PageDetailsFile.menu.filter((s: any) => s.isActive);
+const sections = PageDetailsFile.menu.filter((s: { isActive: boolean }) => s.isActive);
 
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -38,7 +38,7 @@ const NavBar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10">
-            {sections.map((item: any) => (
+            {sections.map((item: { section: string }) => (
               <a
                 key={item.section}
                 href={`#${item.section.toLowerCase()}`}
@@ -72,7 +72,7 @@ const NavBar = () => {
           <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-primary/10 shadow-lg animate-elegant-fade-in">
             <div className="container py-6">
               <div className="flex flex-col gap-4">
-                {sections.map((item: any) => (
+                {sections.map((item: { section: string }) => (
                   <a
                     key={item.section}
                     href={`#${item.section.toLowerCase()}`}

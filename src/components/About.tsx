@@ -1,5 +1,5 @@
-import { FaQuoteLeft, FaHeart, FaGraduationCap, FaBook, FaUsers, FaGlobe } from "react-icons/fa";
-import { HiAcademicCap, HiSparkles } from "react-icons/hi";
+import { FaQuoteLeft, FaHeart, FaBook, FaUsers, FaGlobe } from "react-icons/fa";
+import { HiSparkles } from "react-icons/hi";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
               <FaQuoteLeft className="h-4 w-4 text-primary" />
             </div>
             <p className="text-lg text-muted-foreground italic pl-8 leading-relaxed">
-              "Sir's classes were never just about grades. They were about understanding life, purpose, and our place in this world."
+              &ldquo;Sir&apos;s classes were never just about grades. They were about understanding life, purpose, and our place in this world.&rdquo;
             </p>
             <div className="flex items-center gap-2 mt-4 pl-8">
               <FaHeart className="h-3 w-3 text-primary" />
@@ -69,7 +69,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-sm text-foreground mb-0.5">Published Author</h4>
-                <p className="text-xs text-muted-foreground">Multiple books on spiritual wisdom and children's literature</p>
+                <p className="text-xs text-muted-foreground">Multiple books on spiritual wisdom and children&apos;s literature</p>
               </div>
             </div>
             <div className="flex items-start gap-2">

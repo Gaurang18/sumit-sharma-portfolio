@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import { FaQuoteLeft, FaStar, FaHeart, FaUserGraduate } from "react-icons/fa";
-import { HiAcademicCap, HiOfficeBuilding } from "react-icons/hi";
+import { HiOfficeBuilding } from "react-icons/hi";
 
 type ReferenceDetail = {
   name: string;

@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import Content from "@/components/Content";
 import PageDetailsFile from "@p/configs/page_details.json";
 import Image from "next/image";
-import { FaQuoteLeft, FaHeart, FaArrowDown, FaUserGraduate, FaBook, FaMicrophone } from "react-icons/fa";
+import { FaHeart, FaArrowDown, FaUserGraduate, FaBook, FaMicrophone } from "react-icons/fa";
 import { HiAcademicCap, HiSparkles } from "react-icons/hi";
 
 export default function Home() {
