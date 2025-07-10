@@ -1,6 +1,5 @@
 import { FC } from "react";
-import Image from "next/image";
-import { FaQuoteLeft, FaStar, FaHeart, FaUserGraduate } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 import { HiOfficeBuilding } from "react-icons/hi";
 
 type ReferenceDetail = {
@@ -15,41 +14,48 @@ type ReferencesProps = {
   referenceDetails: ReferenceDetail[];
 };
 
-function ReferenceItem({ name, position, company, testimonial, image }: ReferenceDetail) {
+// Custom Avatar Component with theme gradient
+function Avatar({ name, size = 64 }: { name: string; size?: number }) {
+  const firstLetter = name.charAt(0).toUpperCase();
+  // Theme: deep charcoal to warm golden orange
+  const bgGradient = 'from-[#23272F] to-[#F6B042]';
+  return (
+    <div 
+      className={`relative rounded-full bg-gradient-to-br ${bgGradient} flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors shadow-lg`}
+      style={{ width: size, height: size }}
+    >
+      <span className="text-white font-bold text-xl select-none">
+        {firstLetter}
+      </span>
+      {/* Subtle overlay effect */}
+      <div className="absolute inset-0 bg-white/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+  );
+}
+
+function ReferenceItem({ name, position, company, testimonial }: Omit<ReferenceDetail, 'image'>) {
   return (
     <div className="group relative p-8 rounded-lg border bg-card hover:shadow-lg transition-all duration-500 animate-elegant-fade-in">
       {/* Decorative corner element */}
       <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full"></div>
-      
       <div className="space-y-6">
         {/* Quote */}
         <div className="relative">
           <div className="absolute -top-2 -left-2 p-2 bg-primary/10 rounded-full">
             <FaQuoteLeft className="h-4 w-4 text-primary" />
           </div>
-          <p className="text-lg text-muted-foreground italic pl-8 leading-relaxed">
+          <p className="text-base md:text-[1.05rem] text-muted-foreground italic pl-8 leading-relaxed">
             {testimonial}
           </p>
           {/* Decorative line */}
           <div className="w-16 h-px bg-gradient-to-r from-primary/40 to-transparent mt-4 ml-8"></div>
         </div>
-        
         {/* Author */}
         <div className="flex items-center gap-4">
-          <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
-            <Image
-              src={image}
-              alt={name}
-              fill
-              sizes="64px"
-              className="object-cover"
-            />
-            {/* Overlay effect */}
-            <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </div>
+          <Avatar name={name} size={64} />
           <div className="flex-1">
             <h4 className="text-lg font-semibold text-foreground flex items-center gap-2">
-              <FaUserGraduate className="h-4 w-4 text-primary" />
+              <HiOfficeBuilding className="h-4 w-4 text-primary" />
               {name}
             </h4>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
@@ -58,21 +64,7 @@ function ReferenceItem({ name, position, company, testimonial, image }: Referenc
             </div>
           </div>
         </div>
-        
-        {/* Rating/Trust indicators */}
-        <div className="flex items-center gap-4 pt-4 border-t border-primary/10">
-          <div className="flex items-center gap-1">
-            <FaStar className="h-3 w-3 text-primary" />
-            <FaStar className="h-3 w-3 text-primary" />
-            <FaStar className="h-3 w-3 text-primary" />
-            <FaStar className="h-3 w-3 text-primary" />
-            <FaStar className="h-3 w-3 text-primary" />
-          </div>
-          <div className="flex items-center gap-1 text-xs text-muted-foreground">
-            <FaHeart className="h-3 w-3 text-primary" />
-            <span>Grateful Student</span>
-          </div>
-        </div>
+        {/* Removed rating and grateful student section */}
       </div>
     </div>
   );

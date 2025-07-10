@@ -69,7 +69,7 @@ export default function Home() {
                   className="btn-outline group"
                 >
                   <FaUserGraduate className="mr-2 h-4 w-4" />
-                  <span>Student Testimonials</span>
+                  <span>Testimonials</span>
                 </a>
               </div>
               
@@ -87,7 +87,7 @@ export default function Home() {
                     <FaMicrophone className="h-4 w-4 text-primary" />
                     <span className="text-2xl font-bold text-foreground">8</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Institutions</p>
+                  <p className="text-sm text-muted-foreground">Talks</p>
                 </div>
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-2">

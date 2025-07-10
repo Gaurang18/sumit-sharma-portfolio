@@ -124,28 +124,14 @@
   
   "references": [
     {
-      "name": "AP Singh",
-      "position": "Dean",
-      "company": "BITS Pilani",
-      "testimonial": "Sumit Sharma Sir has been associated with BITS Pilani for over two decades, and his work around the Bhagavad Gita has had a quiet but meaningful impact on the student community. Through his sessions, lectures, and discussions, he has helped students engage deeply with timeless values and practical ethics. His presence has added depth to our campus environment, encouraging reflection and clarity in the minds of young learners.",
-      "image": "/images/profiles.jpeg"
-    },
-    {
-      "name": "LK Maheshwari",
-      "position": "Former Vice-Chancellor",
-      "company": "BITS Pilani",
-      "testimonial": "It has been a privilege to witness the profound and consistent influence Sumit Sharma has had on our students and academic community. His ability to convey the Gita's teachings with clarity, sincerity, and spiritual force is exceptional. Over the years, he has become a quiet pillar of character formation in our ecosystem.",
-      "image": "/images/profiles.jpeg"
-    },
-    {
-      "name": "Siddarth Bhatia",
+      "name": "Dr. Siddarth Bhatia",
       "position": "Director",
       "company": "Puch AI",
       "testimonial": "Sumit Sir's way of teaching transcends the classroom. He doesn't just explain ideas — he awakens thought. His calm demeanor, depth of knowledge, and ability to simplify even the most abstract concepts have deeply influenced how I think and lead.",
       "image": "/images/profiles.jpeg"
     },
     {
-      "name": "Gaurang Bansal",
+      "name": "Dr. Gaurang Bansal",
       "position": "Founder",
       "company": "Quickads",
       "testimonial": "It's rare to meet someone who combines intellectual sharpness with genuine humility the way Sumit Sir does. He shaped not just how I look at texts like the Gita, but how I approach challenges in business and life. His mentorship has been foundational.",
@@ -159,7 +145,7 @@
       "image": "/images/profiles.jpeg"
     },
     {
-      "name": "Saharsh Agarwal",
+      "name": "Prof. Saharsh Agarwal",
       "position": "Assistant Professor",
       "company": "ISB",
       "testimonial": "What makes Sumit Sir special is not just his knowledge, but the way he connects it to each student's journey. His insights continue to guide me — in academia, in leadership, and in life. He teaches you how to think, not what to think.",
@@ -170,22 +156,22 @@
   "gallery": [
     {
       "imageUrl": "/images/NUs.jpeg",
-      "description": "A timely talk exploring the pressures on today's engineers, the roots of modern work anxiety, and strategies for balancing tech advances with well-being.",
-      "title": "Bhagavad Gita Seminar at NUS Singapore"
+      "description": "",
+      "title": "National University of Singapore"
     },
     {
       "imageUrl": "/images/kuk.png",
-      "description": "A regular lecture for the Bhagavad Gita course at Kurukshetra University. ",
-      "title": "⁠Lecture in Bhagavad Gita Course, Kurukshetra University"
+      "description": "",
+      "title": "Kurukshetra University"
     },
     {
       "imageUrl": "/images/BITS.jpeg",
-      "description": "At NUS, an engaging session connected Bhagavad Gita teachings with modern perspectives, sparking interactive discussions and a vibrant exchange of ideas.",
-      "title": "Talk at NUS: The Digital Age Dilemma: Addressing Engineer Anxiety"
+      "description": "",
+      "title": "National University of Singapore"
     },
     {
       "imageUrl": "/images/KIIT.jpeg",
-      "description": "A dynamic discussion with the Vice Chancellor of KIIT Bhubaneswar on integrating the Bhagavad Gita into the curriculum to align ancient Vedic wisdom with modern perspectives.",
+      "description": "",
       "title": "Meeting with VC, KIIT Bhubaneswar"
     }
   ]

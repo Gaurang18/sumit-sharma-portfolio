@@ -1,4 +1,4 @@
-import { FaQuoteLeft, FaHeart, FaBook, FaUsers, FaGlobe } from "react-icons/fa";
+import { FaBook, FaUsers, FaGlobe } from "react-icons/fa";
 import { HiSparkles } from "react-icons/hi";
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
       <div className="prose prose-lg max-w-none">
         <div className="grid gap-10">
           {/* Enhanced Quote */}
-          <div className="relative p-8 rounded-lg bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/10">
+          {/* <div className="relative p-8 rounded-lg bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/10">
             <div className="absolute -top-2 -left-2 p-2 bg-primary/10 rounded-full">
               <FaQuoteLeft className="h-4 w-4 text-primary" />
             </div>
@@ -15,14 +15,14 @@ const About = () => {
               &ldquo;Sir&apos;s classes were never just about grades. They were about understanding life, purpose, and our place in this world.&rdquo;
             </p>
             <div className="flex items-center gap-2 mt-4 pl-8">
-              <FaHeart className="h-3 w-3 text-primary" />
+              
               <p className="text-sm text-primary font-medium">
                 — BITS Pilani Alumni
               </p>
             </div>
             {/* Decorative line */}
-            <div className="w-16 h-px bg-gradient-to-r from-primary/40 to-transparent mt-4 ml-8"></div>
-          </div>
+            {/* <div className="w-16 h-px bg-gradient-to-r from-primary/40 to-transparent mt-4 ml-8"></div>
+          </div> */}
           
           {/* Main Content with Icons */}
           <div className="space-y-6">

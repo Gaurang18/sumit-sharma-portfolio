@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
 import { LuArrowUpRight, LuCalendar, LuExternalLink } from "react-icons/lu";
-import { FaGraduationCap, FaChalkboardTeacher, FaHeart } from "react-icons/fa";
+import { FaGraduationCap, FaChalkboardTeacher } from "react-icons/fa";
 import { HiAcademicCap, HiOfficeBuilding } from "react-icons/hi";
 
 type LabelAndLink = {
@@ -38,7 +38,7 @@ function ExperienceItem(props: ExperienceDetail) {
     if (position.toLowerCase().includes('faculty') || position.toLowerCase().includes('teacher')) {
       return <FaChalkboardTeacher className="h-5 w-5 text-primary" />;
     } else if (position.toLowerCase().includes('coach') || position.toLowerCase().includes('mentor')) {
-      return <FaHeart className="h-5 w-5 text-primary" />;
+      return <FaChalkboardTeacher className="h-5 w-5 text-primary" />;
     } else {
       return <HiAcademicCap className="h-5 w-5 text-primary" />;
     }

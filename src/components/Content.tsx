@@ -135,10 +135,10 @@ const Content: FC = () => {
                 <div className="container">
                   <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-16">
-                      <h2 className="text-balance mb-6">Student Testimonials</h2>
+                      <h2 className="text-balance mb-6">Testimonials</h2>
                       <div className="divider"></div>
                       <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-                        Heartfelt testimonials from students whose lives have been transformed through Sir&apos;s guidance
+                        Heartfelt testimonials from those whose lives have been transformed through Sir&apos;s guidance
                       </p>
                     </div>
                     <div className="animate-elegant-fade-in">
